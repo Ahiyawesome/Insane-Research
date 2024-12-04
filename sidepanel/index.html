@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+  <div class="chat-area">
+    <div class="chat-header">
+      <span class="chat-title">Chat Bot</span>
+    </div>
+    <div>
+      <textarea
+        id="input-prompt"
+        placeholder='Ask a question'
+        cols="45"
+        rows="5"
+      ></textarea>
+    </div>
+    <div class="butts">
+      <button id="button-prompt" class="prompt" disabled>Run</button>
+      <button id="button-reset" class="reset" disabled>Reset</button>
+    </div>
+    <div id="response" class="text" hidden></div>
+    <div id="loading" class="text" hidden>Loading...</div>
+    <div id="error" class="text" hidden></div>
+
+  </div>
+
+  <div id="sections">
+    <!-- Dynamically added sections will be updated here -->
+  </div>
+  <button id="add-section-button">Add Section</button>
+  <template id="section-template">
+    <div class="section">
+
+      <div class="section-header">
+        <span class="section-title">New Section</span>
+        <button class="remove-section-btn">X</button>
+      </div>
+
+      <div class="content">
+        <textarea
+          id="input-prompt"
+          placeholder='Copy and paste the section from the pdf'
+          cols="45"
+          rows="5"
+        ></textarea>
+        <fieldset>
+          <legend>Settings</legend>
+          <div>
+            <label for="length">Length:</label>
+            <select id="length">
+              <option value="short" selected>Short</option>
+              <option value="medium">Medium</option>
+              <option value="long">Long</option>
+            </select>
+          </div>
+        </fieldset>
+        <button id="button-summarize" class="primary" disabled>Summarize</button>
+        <button class="add-subsection">Add Subsection</button>
+        <div id="text-summary" class = "text"></div>
+        <div class="warning card" hidden id="warning"></div>
+      </div>
+
+    </div>
+  </template>
+  <script src="index.js" type="module"></script>
+</body>
+</html>

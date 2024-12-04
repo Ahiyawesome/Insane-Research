@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs"
+  },
+  "devDependencies": {
+    "chrome-types": "^0.1.318",
+    "dompurify": "^3.2.2",
+    "marked": "^15.0.3",
+    "rollup": "^4.28.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}

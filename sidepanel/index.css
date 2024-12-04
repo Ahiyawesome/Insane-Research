@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #accff5;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .section .section-header:hover {
+    background-color: #93c6fb;
+  }
+
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #accff5;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .section-title {
+    margin: 0;
+  }
+  
+  .section .content {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .section.open .content {
+    display: block;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    width: 100%;
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .warning {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-summary {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 150px;
+  }
+  
+  .remove-section-btn {
+    background-color: red;  
+    border: none;                    
+    color: #fcfcfc;                 
+    font-size: 0.5em;                
+    cursor: pointer;
+    padding: 0;                     
+    margin: 0;                      
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    transition: color 0.3s ease;    
+    text-align: center;
+    line-height: 1;                
+  }
+  
+  .remove-section-btn:hover {
+    background-color: #6f0000;                  
+  }
+  
+  .remove-section-btn:focus {
+    outline: none;                  
+  }
+  
+  .add-subsection {
+    background-color: #28a745;
+    color: white;
+    font-size: 14px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-subsection:hover {
+    background-color: #218838;
+  }
+  .butts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e7ecf3;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .prompt {
+    background-color: #28a745;
+    width: 95px;
+  }
+  .prompt:hover {
+    background-color: #218838;
+  }
+  .reset {
+    background-color: red;
+    width: 95px;
+  }
+  .reset:hover {
+    background-color: rgb(157, 0, 0);
+  }

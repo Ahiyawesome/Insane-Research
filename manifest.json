@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Insane Research",
+  "description": "AI assistant to help understand research papers",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "host_permissions": ["http://*/*", "https://*/*", "*://*/*"],
+  "trial_tokens": [
+    "AneWdfhiTMMVEEyaA2Kgrg8deArO+mIzMivOTNoOur9knzCChMgXNhOZq7ZKlWSVKTHh0Qa6CRJKJmuJiAoowAIAAABzeyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vZWpjcGZtb3BsYmNoZmhkaGxmaWplYmhmbGJibXBhbm4iLCJmZWF0dXJlIjoiQUlTdW1tYXJpemF0aW9uQVBJIiwiZXhwaXJ5IjoxNzUzMTQyNDAwfQ==",
+    "AkMsWVZ79gpjw9lvVuWnWJLb7JPk8wV124Ch+TNTbzMHuqyMp/7cRiy/Y4DXh13QgGLjXeRqRn81FmhINVAMCw4AAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vZWpjcGZtb3BsYmNoZmhkaGxmaWplYmhmbGJibXBhbm4iLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9"
+  ],
+  "permissions": ["activeTab", "scripting", "storage", "sidePanel"]
+}
